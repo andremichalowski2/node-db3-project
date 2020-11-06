@@ -38,10 +38,12 @@ router.get('/:id/steps', (req, res) => {
       if (steps.length) {
         res.json(steps);
       } else {
+          // console.log(err)
         res.status(404).json({ message: 'Could not find steps for given scheme' })
       }
     })
     .catch(err => {
+      console.log(err)
       res.status(500).json({ message: 'Failed to get steps' });
     });
 });
@@ -94,6 +96,7 @@ router.put('/:id', (req, res) => {
       res.json(updatedScheme);
     })
     .catch(err => {
+      console.log(err);
       res.status(500).json({ message: 'Failed to update scheme' });
     });
 });
