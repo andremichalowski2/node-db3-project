@@ -6,11 +6,12 @@
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push -u origin `<firstName-lastName>`.
+- [x] Initial commit
+- [x] Create a forked copy of this project.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push -u origin `<firstName-lastName>`.
 
 ### Task 2: Minimum Viable Product
 
@@ -22,12 +23,12 @@ For this project you will
 
 ### Multi Table Queries
 
-Use a graphical tool like `SQLite Studio` to open `./data/northwind.db3` and execute the following queries:
+<!-- Use a graphical tool like `SQLite Studio` to open `./data/northwind.db3` and execute the following queries:
 
 - Display the ProductName and CategoryName for all products in the database. Returns 77 records.
 - Display the order Id and shipper CompanyName for all orders placed before August 9 2012. Returns 429 records.
 - Display the name and quantity of the products ordered in order with Id 10251. Sort by ProductName. Returns 3 records.
-- Display the OrderID, customer's Company Name and the employee's Last Name for every order. All columns should be labeled clearly. Returns 16,789 records.
+- Display the OrderID, customer's Company Name and the employee's Last Name for every order. All columns should be labeled clearly. Returns 16,789 records. -->
 
 ### Database Methods
 
@@ -82,7 +83,7 @@ The following endpoints are available to test the functionality of the model met
 - `GET /api/schemes/:id` - gets a single scheme
 - `GET /api/schemes/:id/steps` - gets all steps for a given scheme, ordered correctly
 - `POST /api/schemes` - adds a new scheme
-- `PUT /api/schemes:id` - updates a given scheme
+- `PUT /api/schemes/:id` - updates a given scheme
 - `DELETE /api/schemes/:id` - removes a given scheme and all associated steps
 
 ### Task 3: Stretch Problems
